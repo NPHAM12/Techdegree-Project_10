@@ -117,7 +117,7 @@ class UserSignUp extends Component {
     // get value into state from textfield by getInput() -> assign to variables -> arugments in addNewUser()
     const fn = this.state.firstName;
     const ln = this.state.lastName;
-    const email_address =this.state.emailAddress;
+    const email_address = (this.state.emailAddress).toLowerCase();
     const password = this.state.password;
     const confirmPassword = this.state.confirmPassword;
 
