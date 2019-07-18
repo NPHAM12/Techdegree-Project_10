@@ -69,7 +69,6 @@ class CreateCourse extends Component {
           // Exist course
           if (err.response.status === 400) {
             // validation errors returned from the REST API api/routes/authenticateUser.js.
-            // const error = err.response.data.message.split("\n");
             badReq[0] = `${err.response.data.message}`;
             this.setState({
               validationError: badReq,
