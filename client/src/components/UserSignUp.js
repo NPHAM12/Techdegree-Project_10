@@ -65,7 +65,6 @@ class UserSignUp extends Component {
         // Exist Email -> Failed create a new user
         if(err.response.status === 400){
           // validation errors returned from the REST API api/routes/users.js.
-          // const badReq = err.response.data.message.split("\n");
           badReq[0] = `${err.response.data.message}`;
           this.setState({
             validationError: badReq,
